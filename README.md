@@ -1,3 +1,27 @@
+# Starting with Knapsack
+
+## What is Knapsack?
+
+  Knapsack is an API (Application Programming Interface) that provides a layer of abstraction above the original Binder source code. Knapsack can be used by anyone, and is free. Knapsack is designed to make the modification and programming of Binder extensions easy, and fun.
+
+## First Code
+
+  Knapsack is an API, meaning that it is only a layer above Binder, and Binder still runs the show. Knapsack provides easy-to-use method calls to do powerful things in Binder.
+
+  Say we wanted to place a block at a specific location in the current game world, let's say a dirt block, at the point (0, 1, 5). To do this we would simply add:
+
+    Knapsack.getCurrentWorld().setBlock(Block.DIRT, 0, 1, 5);
+
+  Now, let's say we wanted to remove that block from the rendering query. We simply put:
+   
+    Knapsack.getCurrentWorld().removeBlock(0, 1, 5);
+
+  This simply sets that block to air, which is not rendered by Binder.
+
+## Licensing
+
+  Knapsack is released under the [Knapsack license (https://github.com/BiggerOnTheInside/Licenses/blob/master/Knapsack.txt).
+
 # Contributing to the Knapsack
 
 ## What you need
