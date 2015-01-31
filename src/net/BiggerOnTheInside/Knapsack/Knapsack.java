@@ -33,6 +33,9 @@ public class Knapsack {
 		System.out.println(b.getArray("test").getBoolean("c"));
 	}
 	
+	/**
+	 * @return Instance of Knapsack.
+	 */
 	public static Knapsack getInstance(){
 		if(instance != null){
 			return instance;
@@ -43,6 +46,9 @@ public class Knapsack {
 		return instance;
 	}
 	
+	/**
+	 * @return Absolute path to Knapsack folder.
+	 */
 	public String getFolderPath(){
 		return homeFolder.getAbsolutePath();
 	}
